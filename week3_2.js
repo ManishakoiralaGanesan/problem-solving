@@ -1,3 +1,4 @@
+
 function findIpValid(ipaddress) {
     let ip = ipaddress.split(".");
     let checkIp = 0;
@@ -8,11 +9,11 @@ function findIpValid(ipaddress) {
         }
     });
 
-    if (checkIp == 0 && ip.length == 4) {
-        return true;
+    if (checkIp == 1 || ip.length != 4) {
+        return false;
     }
-    return false
+    return true
 }
 
-let isValidIp = findIpValid("255.0.301.1");
+let isValidIp = findIpValid("255.0.0.1");
 console.log(isValidIp);
