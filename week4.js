@@ -23,7 +23,7 @@ function sumOfBiggestNumber(number1, number2) {
 
         carry = Math.floor(add / 10);
         let remain = add % 10;
-        sum[index] = index == 0 ? (remain + carry * 10).toString() : sum[index] = remain.toString();
+        sum[index] = index == 0 ? (remain + carry * 10).toString() : remain.toString();
     }
 
     return sum.join("");
